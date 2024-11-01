@@ -1,0 +1,22 @@
+.form-signup {
+  max-width: 330px;
+  padding: 1rem;
+}
+
+.form-floating:focus-within {
+  z-index: 2;
+}
+
+input[type="user"],
+input[type="email"],
+input[type="password"],
+input[type="confirmPassword"] {
+  margin-bottom: -1px;
+  border-radius: 5px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
