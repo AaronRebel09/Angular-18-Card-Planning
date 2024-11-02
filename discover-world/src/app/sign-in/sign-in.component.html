@@ -1,14 +1,14 @@
 <main class="form-signin w-100 m-auto">
-  <form>
+  <form [formGroup]="userForm" (ngSubmit)="onSignIn()">
     <img class="mb-4" src="" alt="" width="72" height="57">
     <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
 
     <div class="form-floating">
-      <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
-      <label for="floatingEmail">Email address</label>
+      <input type="user" class="form-control" id="floatingUser" placeholder="user" formControlName="user">
+      <label for="floatingUser">User</label>
     </div>
     <div class="form-floating">
-      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+      <input type="password" class="form-control" id="floatingPassword" placeholder="Password" formControlName="password">
       <label for="floatingPassword">Password</label>
     </div>
 

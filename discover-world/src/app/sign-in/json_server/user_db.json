@@ -1,0 +1,11 @@
+{
+  "users": [
+    {
+      "id": "380e",
+      "user": "aron",
+      "email": "aron@accenture.com",
+      "password": "1234",
+      "confPassword": "1234"
+    }
+  ]
+}

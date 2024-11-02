@@ -19,7 +19,22 @@ ng g c main-title
 ng g c categories 
 ng g c post
 
-st
+step 4 : work sign-in component with help of json-server package let's consume an api of users
+
+first into app.config.ts add provideHttpClient() to providers :
+
+export const appConfig: ApplicationConfig = {
+providers: [provideZoneChangeDetection({ eventCoalescing: true }),
+provideRouter(routes), provideClientHydration(), provideHttpClient()]
+};
+
+after launch follow command for create a service under service folder 
+ng g s sign-in
+
+into folder json_server let's add a file that contain api specification 
+user_db.json
+
+and will implement service for consume users.
 
 # DiscoverWorld
 
