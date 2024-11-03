@@ -36,6 +36,9 @@ user_db.json
 
 and will implement service for consume users.
 
+step 5: create users into json-server
+ng g s new-post
+
 # DiscoverWorld
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.11.

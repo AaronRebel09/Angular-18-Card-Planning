@@ -6,6 +6,20 @@
       "email": "aron@accenture.com",
       "password": "1234",
       "confPassword": "1234"
+    },
+    {
+      "id": "9256",
+      "user": "user",
+      "email": "user@gmail.com",
+      "password": "1234",
+      "confPassword": "1234"
+    },
+    {
+      "id": "86d0",
+      "user": "user",
+      "email": "user@gmail.com",
+      "password": "1234",
+      "confPassword": "1234"
     }
   ]
 }
