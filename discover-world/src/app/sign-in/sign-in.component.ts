@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {FormControl, FormGroup, ReactiveFormsModule, Validators} from '@angular/forms';
 import {SignInService} from './service/sign-in.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-sign-in',
@@ -16,7 +17,7 @@ export class SignInComponent {
   userForm : FormGroup;
   usersData: any;
 
-  constructor( private _userService: SignInService ) {
+  constructor( private _userService: SignInService, private router: Router, ) {
     this.userForm = new FormGroup({
       user: new FormControl('', [Validators.required]),
       password: new FormControl('', [Validators.required]),
@@ -41,6 +42,7 @@ export class SignInComponent {
           u.user === user && u.password === password);
     if (isSigned) {
       console.log('sign in successfully');
+      this.router.navigate(['/categories']);
     }
     console.log('wrong credentials');
   }
