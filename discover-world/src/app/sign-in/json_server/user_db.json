@@ -20,6 +20,13 @@
       "email": "user@gmail.com",
       "password": "1234",
       "confPassword": "1234"
+    },
+    {
+      "id": "59c1",
+      "user": "user",
+      "email": "user@gmail.com",
+      "password": "1234",
+      "confPassword": "1234"
     }
   ]
 }
