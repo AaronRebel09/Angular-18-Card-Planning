@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import {SignInComponent} from './sign-in/sign-in.component';
 import {SignUpComponent} from './sign-up/sign-up.component';
-import {SloganComponent} from './slogan/slogan.component';
-import {MainTitleComponent} from './main-title/main-title.component';
+import {SloganComponent} from './categories/slogan/slogan.component';
+import {MainTitleComponent} from './categories/main-title/main-title.component';
 import {CategoriesComponent} from './categories/categories.component';
 
 @Component({

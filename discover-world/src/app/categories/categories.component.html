@@ -1,1 +1,28 @@
-<p>categories works!</p>
+ <app-slogan style="text-align: center; color: orange;"></app-slogan>
+ <app-main-title style="text-align: center;"></app-main-title>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="https://webapps1.chicago.gov/cdn/Bootstrap-4.0.0-beta.2/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
+    </a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav" *ngFor="let nav of navLinks">
+        <li class="nav-item" fxLayout="column" fxLayoutAlign="center center">
+          <a class="nav-link">
+            <button class="btn btn-outline-success me-2"
+                    (click)="onClick(nav.category)">
+              {{ nav.category }}
+            </button>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+<div class="categories" *ngFor="let card of cards">
+  <div class="card" [style.background-image]="'url(' + card.url + ')'">
+    <h3>{{ card.title | titlecase}}</h3>
+    <p>{{ card.category | uppercase }}</p>
+    <p>{{ card.description }}</p>
+    <p>{{ card.url }}</p>
+  </div>
+</div>
