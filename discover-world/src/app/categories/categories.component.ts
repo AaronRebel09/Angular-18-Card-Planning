@@ -4,6 +4,8 @@ import {LowerCasePipe, NgForOf, TitleCasePipe, UpperCasePipe} from '@angular/com
 import {LocateService} from './service/locate.service';
 import {travel} from './interface/travel-interface';
 import {map} from 'rxjs';
+import {SloganComponent} from './slogan/slogan.component';
+import {MainTitleComponent} from './main-title/main-title.component';
 
 @Component({
   selector: 'app-categories',
@@ -14,7 +16,9 @@ import {map} from 'rxjs';
     NgForOf,
     TitleCasePipe,
     UpperCasePipe,
-    LowerCasePipe
+    LowerCasePipe,
+    SloganComponent,
+    MainTitleComponent
   ],
   templateUrl: './categories.component.html',
   styleUrl: './categories.component.scss'
